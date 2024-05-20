@@ -1,3 +1,11 @@
+## 1.1.0 (2024-05-20)
+
+- Added support for OAuth V2 Tokens (https://docs.clover.com/docs/oauth-intro)
+- Added support for external OAuth flows (NoOAuth)
+- Improved retries to inititial sequence of data fetches to improve startup reliability
+- Added privacy manifest
+- Other minor bug fixes
+
 ## 1.0.2 (2024-04-24)
 
 - SDK can now be initialized and logged into using the simulator (payment and bluetooth operations are not possible on the simulator).
