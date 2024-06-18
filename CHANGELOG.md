@@ -1,3 +1,6 @@
+## 1.0.3 (2024-06-18)
+- Improved the linking of some of our internal dependencies to address an App Store validation issue. No code, API, or functionality changes from 1.0.2.
+
 ## 1.1.0 (2024-05-20)
 
 - Added support for OAuth V2 Tokens (https://docs.clover.com/docs/oauth-intro)
