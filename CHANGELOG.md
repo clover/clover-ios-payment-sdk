@@ -1,3 +1,6 @@
+## 1.1.2 (2024-07-11)
+- This release fixes an issue where the `employeeId` associated with a payment might be invalid, resulting in rejected payments.
+
 ## 1.1.1 (2024-06-20)
 - Improved the linking of some of our internal dependencies to address an App Store validation issue. No code, API, or functionality changes from 1.1.0.
 
