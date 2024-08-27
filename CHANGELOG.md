@@ -1,3 +1,6 @@
+## 1.1.3 (2024-08-27)
+- This release adds additional internal tools to assist Clover Developer Relations in debugging. No external or public changes.
+
 ## 1.1.2 (2024-07-11)
 - This release fixes an issue where the `employeeId` associated with a payment might be invalid, resulting in rejected payments.
 
