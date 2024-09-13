@@ -1,3 +1,7 @@
+## 1.2 (2024-09-13)
+- This release adds the ability to cancel a transaction before payment is presented, as opposed to waiting for the reader to timeout. Simply call the new `cancelTransaction()` function after a transaction has begun but before the card is presented. If the reader is successully able to cancel the operation, the `charge()` function will throw a `CloverTransactionError` with a code of `.cancelled`. If a card has already been presented, the payment may be completed— at which time, you may reverse the payment as needed.
+- Also includes miscellaneous bug fixes and improvements.
+
 ## 1.1.3 (2024-08-27)
 - This release adds additional internal tools to assist Clover Developer Relations in debugging. No external or public changes.
 
