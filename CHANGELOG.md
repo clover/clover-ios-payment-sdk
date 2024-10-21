@@ -1,3 +1,11 @@
+## 1.3 (2024-10-21)
+### New
+- The ability to increment a non-final, uncaptured transaction (also known as a pre-authorization). This feature is dependent on merchant configuration and card issuer support. 
+
+### Fixes
+- Fixes an issue where we wouldn’t mark a payment with the `.partialPayment` flag if the authorized amount was less than requested.
+- Improves the logic that determines how the SDK will report that it is "offline".
+
 ## 1.2 (2024-09-13)
 - This release adds the ability to cancel a transaction before payment is presented, as opposed to waiting for the reader to timeout. Simply call the new `cancelTransaction()` function after a transaction has begun but before the card is presented. If the reader is successully able to cancel the operation, the `charge()` function will throw a `CloverTransactionError` with a code of `.cancelled`. If a card has already been presented, the payment may be completed— at which time, you may reverse the payment as needed.
 - Also includes miscellaneous bug fixes and improvements.
